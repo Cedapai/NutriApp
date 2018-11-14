@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "29575653794",
+    "firebase_url": "https://nutriapp-c8be7.firebaseio.com",
+    "project_id": "nutriapp-c8be7",
+    "storage_bucket": "nutriapp-c8be7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29575653794:android:a205888052063dbf",
+        "android_client_info": {
+          "package_name": "com.example.betancourt.nutriapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29575653794-rvbvrc0drh5tj348irk491l1brbltkni.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJ828s7SsmLR2nWhteagCOOaZ691wggw4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
