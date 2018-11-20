@@ -1,5 +1,6 @@
 package com.example.betancourt.nutriapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -36,9 +37,10 @@ public class SearchFoodActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_food);
-
+        Intent intent = getIntent();
+        String food_type = intent.getStringExtra("type");
         foodList = new ArrayList<>();
-        foodListAdapter = new FoodListAdapter(getApplicationContext(), foodList);
+        foodListAdapter = new FoodListAdapter(getApplicationContext(), foodList, food_type);
 
         mFoodlList = (RecyclerView) findViewById(R.id.food_list);
         mFoodlList.setHasFixedSize(true);

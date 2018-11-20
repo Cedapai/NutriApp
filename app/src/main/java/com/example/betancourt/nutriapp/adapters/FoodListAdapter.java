@@ -27,11 +27,12 @@ public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.ViewHo
     public Context context;
     public FirebaseStorage storage;
     public StorageReference storageRef;
+    private String food_type;
 
-    public FoodListAdapter(Context context, List<Food> foodList){
+    public FoodListAdapter(Context context, List<Food> foodList, String type){
         this.foodList = foodList;
         this.context = context;
-
+        this.food_type = type;
         storage = FirebaseStorage.getInstance();
 
         //mFirestore = FirebaseFirestore.getInstance();
@@ -64,6 +65,7 @@ public class FoodListAdapter extends RecyclerView.Adapter<FoodListAdapter.ViewHo
             public void onClick(View view) {
                 Intent intent = new Intent(context,FoodActivity.class);
                 intent.putExtra("id", food_id);
+                intent.putExtra("type", food_type);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(intent);
             }

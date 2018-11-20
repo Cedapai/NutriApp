@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/rounded_corner"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/nombre_register"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:text="Nombre"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/type_register"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/nombre_register"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="49dp"
+        android:text="Tipo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/foodImagePrimary" />
+
+    <TextView
+        android:id="@+id/cantidad_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/type_register"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="84dp"
+        android:text="Cantidad" />
+
+    <TextView
+        android:id="@+id/fecha_hora_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/type_register"
+        android:layout_alignTop="@+id/type_register"
+        android:layout_marginTop="32dp"
+        android:text="Fecha y hora" />
+
+    <TextView
+        android:id="@+id/marca_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/type_register"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="131dp"
+        android:text="Marca" />
+
+    <TextView
+        android:id="@+id/quien_resgister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/marca_register"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="0dp"
+        android:text="Quien" />
+
+    <TextView
+        android:id="@+id/actividad_resgister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/marca_register"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="53dp"
+        android:text="Actividad" />
+
+</RelativeLayout>
