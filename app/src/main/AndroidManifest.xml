@@ -31,7 +31,9 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".RegistrationActivity" />
         <activity android:name=".LandingUserActivity" />
-        <activity android:name=".IniciarSesionActivity"></activity>
+        <activity android:name=".IniciarSesionActivity" />
+        <activity android:name=".FoodTypeActivity" />
+        <activity android:name=".SearchFoodActivity"></activity>
     </application>
 
 </manifest>

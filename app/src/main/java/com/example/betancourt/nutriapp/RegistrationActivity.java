@@ -25,7 +25,7 @@ import java.util.Map;
 
 public class RegistrationActivity extends AppCompatActivity {
 
-    private EditText txtEmailAddress, txtPassword, txtName;
+    private EditText txtEmailAddress, txtPassword, txtName, txtAge, txtBirthday, txtHeight, txtWeight, txtGender, txtDoctor;
     private FirebaseAuth firebaseAuth;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
 
@@ -33,9 +33,17 @@ public class RegistrationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
+        // TextViews
         txtEmailAddress = (EditText) findViewById(R.id.txtEmailRegistration);
         txtPassword = (EditText) findViewById(R.id.txtPasswordRegistration);
         txtName = (EditText) findViewById(R.id.txtNameRegistration);
+        txtAge = (EditText) findViewById(R.id.txtAgeRegistration);
+        txtBirthday = (EditText) findViewById(R.id.txtBirthdayRegistration);
+        txtHeight = (EditText) findViewById(R.id.txtHeightRegistration);
+        txtWeight = (EditText) findViewById(R.id.txtWeightRegistration);
+        txtGender = (EditText) findViewById(R.id.txtGenderRegistration);
+        txtDoctor = (EditText) findViewById(R.id.txtDoctorNameRegistration);
+        // Firebase
         firebaseAuth = FirebaseAuth.getInstance();
 
     }
@@ -53,6 +61,12 @@ public class RegistrationActivity extends AppCompatActivity {
                     String userUid = FirebaseAuth.getInstance().getCurrentUser().getUid();
                     // Data of the user
                     user.put("name", txtName.getText().toString());
+                    user.put("age", txtAge.getText().toString());
+                    user.put("birthday", txtBirthday.getText().toString());
+                    user.put("height", txtHeight.getText().toString());
+                    user.put("weight", txtWeight.getText().toString());
+                    user.put("gender", txtGender.getText().toString());
+                    user.put("doctor", txtDoctor.getText().toString());
                     // Create user in firestore
                     db.collection("users").document(userUid)
                             .set(user)

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodTypeActivity">
+
+    <View
+        android:id="@+id/myRectangleView3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/rectangle" />
+
+    <TextView
+        android:id="@+id/textViewTitle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif-monospace"
+        android:text="Tipo de Comida"
+        android:textColor="@android:color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/myRectangleView3"
+        app:layout_constraintEnd_toStartOf="@+id/myRectangleView3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/myRectangleView3"
+        app:layout_constraintTop_toBottomOf="@+id/myRectangleView3" />
+
+    <Button
+        android:id="@+id/tipo_desayuno_button"
+        style="?android:textAppearanceSmall"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
+        android:background="@drawable/rounded_button"
+        android:onClick="btnDesayuno_Click"
+        android:text="Desayuno"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tipo_comida_button"
+        style="?android:textAppearanceSmall"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/rounded_button"
+        android:onClick="btnComida_Click"
+        android:text="Comida"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipo_desayuno_button" />
+
+    <Button
+        android:id="@+id/tipo_cena_button"
+        style="?android:textAppearanceSmall"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/rounded_button"
+        android:onClick="btnCena_Click"
+        android:text="Cena"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipo_comida_button" />
+
+    <Button
+        android:id="@+id/tipo_colacion_button"
+        style="?android:textAppearanceSmall"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/rounded_button"
+        android:onClick="btnColacion_Click"
+        android:text="Colación"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipo_cena_button" />
+
+</android.support.constraint.ConstraintLayout>
