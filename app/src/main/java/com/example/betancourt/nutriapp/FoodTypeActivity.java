@@ -14,22 +14,22 @@ public class FoodTypeActivity extends AppCompatActivity {
     }
 
     public void btnDesayuno_Click(View v){
-        Intent i = new Intent(FoodTypeActivity.this, RegistrationActivity.class);
+        Intent i = new Intent(FoodTypeActivity.this, SearchFoodActivity.class);
         i.putExtra("type", "desayuno");
         startActivity(i);
     }
     public void btnComida_Click(View v){
-        Intent i = new Intent(FoodTypeActivity.this, RegistrationActivity.class);
+        Intent i = new Intent(FoodTypeActivity.this, SearchFoodActivity.class);
         i.putExtra("type", "comida");
         startActivity(i);
     }
     public void btnCena_Click(View v){
-        Intent i = new Intent(FoodTypeActivity.this, RegistrationActivity.class);
+        Intent i = new Intent(FoodTypeActivity.this, SearchFoodActivity.class);
         i.putExtra("type", "cena");
         startActivity(i);
     }
     public void btnColacion_Click(View v){
-        Intent i = new Intent(FoodTypeActivity.this, RegistrationActivity.class);
+        Intent i = new Intent(FoodTypeActivity.this, SearchFoodActivity.class);
         i.putExtra("type", "colacion");
         startActivity(i);
     }

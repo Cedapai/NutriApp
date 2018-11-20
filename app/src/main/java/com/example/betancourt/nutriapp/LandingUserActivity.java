@@ -59,7 +59,7 @@ public class LandingUserActivity extends AppCompatActivity {
 
 
     }
-    public void btnRegistration_Click(View v){
+    public void btnAddFood(View v){
         Intent i = new Intent(LandingUserActivity.this, FoodTypeActivity.class);
         startActivity(i);
     }
