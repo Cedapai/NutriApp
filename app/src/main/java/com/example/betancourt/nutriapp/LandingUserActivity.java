@@ -69,7 +69,7 @@ public class LandingUserActivity extends AppCompatActivity {
                         Log.d("Firestore", "DocumentSnapshot data: " + document.getData());
                         // Use user POJO
                         User user = document.toObject(User.class).withId(userUid);
-                        txtEmailUser.setText(user.getName());
+                        txtEmailUser.setText(("Usuario: " + user.getName() + "\nNutriologo: " + user.getDoctor()));
                         progressDialog.dismiss();
                     } else {
                         Log.d("Firestore", "No such document");
